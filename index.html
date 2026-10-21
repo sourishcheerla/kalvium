@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2e9">
+    <meta name="description" content="Find a little inspiration in the natural world with Fieldnote.">
+    <title>Fieldnote — a visual field guide</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Fieldnote home">
+        <span class="wordmark-mark" aria-hidden="true">F.</span>
+        <span>fieldnote</span>
+      </a>
+      <p class="header-note">A visual field guide for the curious</p>
+      <span class="issue-label"><span class="issue-dot" aria-hidden="true"></span> No. 01 / Open edition</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">COLLECT WHAT CATCHES YOUR EYE</p>
+          <h1 id="page-title">A world of<br><span>small wonders.</span></h1>
+          <p class="intro-description">Look closer. Find a place, a feeling, or something you can’t quite name yet.</p>
+        </div>
+
+        <div class="search-panel">
+          <label class="search-label" for="topic-search">What would you like to discover?</label>
+          <div class="search-controls">
+            <input id="topic-search" name="topic" type="search" placeholder="Try “wild gardens”" autocomplete="off">
+            <button id="search-button" class="search-button" type="button">
+              <span>Search</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="search-bottom">
+            <span class="search-hint">A few ideas to get you started</span>
+            <button id="clear-button" class="clear-button" type="button">Clear</button>
+          </div>
+          <nav class="suggestions" aria-label="Suggested searches">
+            <button class="suggestion-chip" type="button">Wild gardens</button>
+            <button class="suggestion-chip" type="button">Coastal paths</button>
+            <button class="suggestion-chip" type="button">Tiny creatures</button>
+          </nav>
+        </div>
+      </section>
+
+      <section class="discoveries" aria-labelledby="discoveries-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR NEXT FIELD TRIP</p>
+            <h2 id="discoveries-title">The collection</h2>
+          </div>
+          <p id="result-count" class="result-count">Your discoveries will gather here</p>
+        </div>
+        <div id="results" class="results-grid" aria-live="polite" aria-label="Image search results"></div>
+        <div class="empty-state">
+          <span class="empty-icon" aria-hidden="true">✳</span>
+          <p class="empty-title">Nothing pinned here. Yet.</p>
+          <p class="empty-description">Search for something you love and your visual field guide will begin to take shape.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>FIELDNOTE STUDIO</span>
+      <span>Made for wondering&nbsp; <span aria-hidden="true">✳</span></span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

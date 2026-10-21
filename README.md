@@ -1,0 +1,3 @@
+# Fieldnote
+
+Fieldnote will help people search for images and collect visual inspiration from the natural world. I chose a warm paper and forest-green palette to make the interface feel like a field journal rather than a generic search page. The editorial split layout pairs a short invitation with a focused search panel, so visitors know what to do as soon as they arrive. Quick-pick topic chips and a visible empty state make the starting point useful even before results are available.
