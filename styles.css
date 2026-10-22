@@ -296,6 +296,44 @@ h2 {
   gap: 22px;
 }
 
+.results-grid:not(:empty) + .empty-state {
+  display: none;
+}
+
+.result-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper-light);
+}
+
+.result-image-link {
+  display: block;
+  overflow: hidden;
+  background: #e9e8df;
+}
+
+.result-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.result-image-link:hover .result-image {
+  transform: scale(1.03);
+}
+
+.result-caption {
+  margin: 0;
+  padding: 12px 14px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .empty-state {
   display: grid;
   justify-items: center;

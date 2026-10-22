@@ -26,11 +26,11 @@
           <p class="intro-description">Look closer. Find a place, a feeling, or something you can’t quite name yet.</p>
         </div>
 
-        <div class="search-panel">
+        <form id="search-form" class="search-panel">
           <label class="search-label" for="topic-search">What would you like to discover?</label>
           <div class="search-controls">
             <input id="topic-search" name="topic" type="search" placeholder="Try “wild gardens”" autocomplete="off">
-            <button id="search-button" class="search-button" type="button">
+            <button id="search-button" class="search-button" type="submit">
               <span>Search</span>
               <span class="button-arrow" aria-hidden="true">↗</span>
             </button>
@@ -44,7 +44,7 @@
             <button class="suggestion-chip" type="button">Coastal paths</button>
             <button class="suggestion-chip" type="button">Tiny creatures</button>
           </nav>
-        </div>
+        </form>
       </section>
 
       <section class="discoveries" aria-labelledby="discoveries-title">
