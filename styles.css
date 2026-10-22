@@ -296,6 +296,97 @@ h2 {
   gap: 22px;
 }
 
+.results-grid:not(:empty) + .empty-state {
+  display: none;
+}
+
+#search-status:not([hidden]) + .empty-state {
+  display: none;
+}
+
+.search-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.search-status[hidden] {
+  display: none;
+}
+
+.search-status::before {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--line);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  content: "";
+  animation: fieldnote-spin 700ms linear infinite;
+}
+
+@keyframes fieldnote-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.result-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper-light);
+  animation: card-arrive 240ms ease both;
+}
+
+@keyframes card-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .search-status::before,
+  .result-card {
+    animation: none;
+  }
+}
+
+.result-image-link {
+  display: block;
+  overflow: hidden;
+  background: #e9e8df;
+}
+
+.result-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.result-image-link:hover .result-image {
+  transform: scale(1.03);
+}
+
+.result-caption {
+  margin: 0;
+  padding: 12px 14px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .empty-state {
   display: grid;
   justify-items: center;
